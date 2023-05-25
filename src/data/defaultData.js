@@ -1,0 +1,15 @@
+export const defaultWeatherData = {
+	coord: { lon: 21.0118, lat: 52.2298 },
+	weather: [{ id: 801, main: 'Clouds', description: 'pochmurnie', icon: '02d' }],
+	base: 'stations',
+	main: { temp: 22.73, feels_like: 22.73, temp_min: 20.88, temp_max: 24.39, pressure: 1019, humidity: 64 },
+	visibility: 10000,
+	wind: { speed: 3.6, deg: 280 },
+	clouds: { all: 20 },
+	dt: 1685016627,
+	sys: { type: 2, id: 2032856, country: 'PL', sunrise: 1684981697, sunset: 1685039864 },
+	timezone: 7200,
+	id: 756135,
+	name: 'Warszawa',
+	cod: 200,
+};

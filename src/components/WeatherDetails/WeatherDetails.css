@@ -1,0 +1,10 @@
+p {
+	padding: 10px 0;
+}
+
+.value {
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 0 10px;
+	color: rgba(31, 13, 94, 0.723);
+}
