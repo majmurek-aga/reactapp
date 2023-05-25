@@ -3,7 +3,7 @@ import { fetchWeather } from '../../services/fetchWeatherApi';
 import { defaultWeatherData } from '../../data/defaultData';
 import WeatherDetails from '../WeatherDetails/WeatherDetails';
 import './WeatherContainer.css';
-import image from '../../assets/images/unknown.png';
+import weatherImage from '../../assets/images/unknown.png';
 
 const WeatherContainer = () => {
 	const [weather, setWeather] = useState(defaultWeatherData);
@@ -24,7 +24,7 @@ const WeatherContainer = () => {
 
 	return (
 		<div className='container'>
-			<img src={image}  alt="image"/>
+			<img src={weatherImage}  alt="weatherImage"/>
 			<input placeholder='Wpisz nazwę miasta' onChange={(e) => setCity(e.target.value)} />
 			<WeatherDetails data={weather} isDataCorrect={isDataCorrect} />
 		</div>
