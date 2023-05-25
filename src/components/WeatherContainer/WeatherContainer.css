@@ -1,6 +1,6 @@
 .container {
 	width: 800px;
-	height: 400px;
+	height: 500px;
 	background-color: tomato;
 	display: flex;
 	align-items: center;
@@ -24,4 +24,9 @@ input {
 input::placeholder {
 	color: green;
 	text-transform: uppercase;
+}
+
+img {
+	width: 150px;
+	height: 100px;
 }

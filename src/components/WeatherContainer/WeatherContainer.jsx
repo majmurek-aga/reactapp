@@ -3,6 +3,7 @@ import { fetchWeather } from '../../services/fetchWeatherApi';
 import { defaultWeatherData } from '../../data/defaultData';
 import WeatherDetails from '../WeatherDetails/WeatherDetails';
 import './WeatherContainer.css';
+import image from '../../assets/images/unknown.png';
 
 const WeatherContainer = () => {
 	const [weather, setWeather] = useState(defaultWeatherData);
@@ -19,12 +20,13 @@ const WeatherContainer = () => {
 		return () => clearTimeout(getData);
 	}, [city]);
 
-    const isDataCorrect = JSON.stringify(weather) !== '{}';
+	const isDataCorrect = JSON.stringify(weather) !== '{}';
 
 	return (
 		<div className='container'>
+			<img src={image}  alt="image"/>
 			<input placeholder='Wpisz nazwę miasta' onChange={(e) => setCity(e.target.value)} />
-				<WeatherDetails data={weather} isDataCorrect={isDataCorrect}/>
+			<WeatherDetails data={weather} isDataCorrect={isDataCorrect} />
 		</div>
 	);
 };
